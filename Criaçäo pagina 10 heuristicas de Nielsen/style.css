@@ -1,0 +1,68 @@
+body 
+{
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+color: #333333;
+margin: 20px;
+}
+
+nav 
+{
+background-color: #008000;
+padding: 10px;
+}
+
+nav ul 
+{
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+nav li 
+{
+display: inline;
+margin-right: 20px;
+}
+
+nav a 
+{
+color: white;
+text-decoration: none;
+font-size: 18px;
+}
+
+nav a:hover 
+{
+text-decoration: underline;
+}
+
+h1 
+{
+color: #0055aa;
+text-align: center;
+}
+
+h2 
+{
+color: #00661f;
+border-bottom: 2px solid #cccccc;
+padding-bottom: 5px;
+}
+
+#lista 
+{
+background-color: white;
+padding: 20px;
+border: 1px solid #aaaaaa;
+}
+
+.exemplo 
+{
+background-color: #ffffcc;
+font-style: italic;
+padding: 5px;
+border-left: 3px solid #ff3300;
+
+}
+
