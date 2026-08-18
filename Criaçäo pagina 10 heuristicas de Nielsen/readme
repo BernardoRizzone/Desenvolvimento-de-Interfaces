@@ -1,1 +1,8 @@
+Esta atividade tem por objetivo entender as 10 heurísticas de Nielsen. Também tem como objetivo o desenvolvimento de páginas de Internet usando alguns recursos como barras de navegação e CSS.
 
+Leia tutoriais sobre nav bar nas seções  CSS no w3schools: https://www.w3schools.com/css/css_navbar.asp
+Desenvolva uma página de Internet que explique as 10 heurísticas de Nielsen: https://www.nngroup.com/articles/ten-usability-heuristics/
+Explore barra de navegação em sua página, você pode inserir por exemplo home, sobre mim, heurísticas de Nielsen, relatório(com referências).
+Entregável: Escreva RA e NOME. Copie e cole seus códigos html e css. Dê prints das suas páginas e entregue em um arquivo único não zipado e não linkado. 
+
+Obs: Caso use o CSS separado do html, crie um arquivo style.css (aqui que escreverá seus comandos css) e o conecte com html
