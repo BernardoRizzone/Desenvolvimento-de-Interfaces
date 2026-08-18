@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalho - 10 Heurísticas de Nielsen</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Página Inicial</a></li>
+            <li><a href="#lista">As Heurísticas</a></li>
+            <li><a href="#fim">Fim</a></li>
+        </ul>
+    </nav>
+
+    <h1 id="inicio">As 10 Heurísticas de Jakob Nielsen</h1>
+    <h4>Bernardo Rizzone</h4>
+    <h4>RA:22651897</h4>
+    <p>As 10 heurísticas de usabilidade foram criadas em 1990 por Jakob
+Nielsen em parceria com Rolf Molich. Elas nasceram da necessidade de ter
+regras práticas e rápidas para avaliar interfaces de computadores sem
+precisar testar com usuários o tempo todo. Em 1994, Nielsen refinou esses
+princípios no formato que conhecemos hoje. Jakob Nielsen e Rolf Molich
+desenvolveram os princípios fundamentais em 1990 baseados em bom senso e
+na interação humano-computador da época. Revisão de 1994: Nielsen
+atualizou a lista com base em uma formula matematica de testes para
+abranger melhor os problemas comuns de design. </p>
+
+<hr>
+
+    <div id="lista">
+        <h2>1. Visibilidade do status do sistema</h2>
+
+        <p>O sistema deve sempre manter o usuário informado sobre o que
+está acontecendo através de feedback adequado em tempo hábil.</p>
+
+        <p class="exemplo">Exemplo: Mostrar uma barra de carregamento
+para a pessoa não achar que o celular travou.</p>
+
+        <h2>2. Correspondência com o mundo real</h2>
+
+        <p>O sistema deve falar a língua do usuário, com palavras, frases
+e conceitos familiares, seguindo convenções do mundo real.</p>
+
+        <p class="exemplo">Exemplo: Usar o desenho de um envelope para email.</p>
+
+        <h2>3. Controle e liberdade do usuário</h2>
+
+        <p>Usuários costumam escolher funções por engano e precisam de
+uma "saída de emergência" clara para deixar o estado indesejado sem
+passar por processos longos..</p>
+
+        <p class="exemplo">Exemplo: Um botão de "Voltar" bem fácil de
+achar.</p>
+        <h2>4. Consistência e padrões</h2>
+
+        <p> Usuários não devem precisar adivinhar se diferentes palavras,
+situações ou ações significam a mesma coisa. Siga convenções de
+plataforma.</p>
+
+        <p class="exemplo">Exemplo: O botão de "Confirmar" ser sempre
+verde.</p>
+        <h2>5. Prevenção de erros</h2>
+
+        <p>Melhor do que boas mensagens de erro é um design cuidadoso que
+previne a ocorrência de problemas antes que o usuário os cometa..</p>
+
+        <p class="exemplo">Exemplo: Perguntar "Tem certeza que quer
+apagar?" antes de deletar um contato.</p>
+
+        <h2>6. Reconhecer em vez de lembrar</h2>
+
+        <p> Minimize a carga de memória do usuário tornando visíveis
+objetos, ações e opções. O usuário não deve ter que lembrar de uma tela
+para outra.</p>
+
+        <p class="exemplo">Exemplo: Deixar os botões principais sempre à
+vista na tela.</p>
+
+        <h2>7. Flexibilidade e eficiência</h2>
+
+        <p> Atalhos — ocultos para usuários novatos — podem acelerar a
+interação para o usuário experiente, permitindo que o sistema atenda a
+ambos os perfis.</p>
+
+        <p class="exemplo">Exemplo: Poder usar CTRL+C no teclado em vez
+de ter que clicar com o mouse.</p>
+
+        <h2>8. Estética e design minimalista</h2>
+
+        <p> Diálogos não devem conter informações irrelevantes ou pouco
+usadas. Cada unidade extra de informação compete com as relevantes.</p>
+
+        <p class="exemplo">Exemplo: Uma tela limpa, sem muita propaganda
+piscando.</p>
+
+        <h2>9. Ajudar a reconhecer e arrumar erros</h2>
+
+        <p>As mensagens de erro devem ser expressas em linguagem clara
+(sem códigos), indicar o problema com precisão e sugerir uma solução
+construtiva.</p>
+
+    <p class="exemplo">Exemplo: Em vez de "Erro 404", escrever "Senha
+incorreta, tente de novo".</p>
+
+    <h2>10. Ajuda e documentação</h2>
+
+    <p> É melhor se o sistema puder ser usado sem explicação, mas
+pode ser necessário fornecer ajuda e documentação fáceis de buscar e
+focadas nas tarefas do usuário.</p>
+
+    <p class="exemplo">Exemplo: Um passo a passo com imagens e letras
+grandes, ótimo para ensinar usuários mais idosos a mexerem no
+celular.</p>
+
+    </div>
+    <hr>
+    <p id="fim">Vimos hoje que o foco principal das heuristicas e
+projetar telas e sistemas pensando em quem vai usar, garantindo que a
+experiência seja intuitiva e sem frustações. Alem disso vimos na parte
+pratica a estrutura (HTML). Uma barra de navegção básica nasce de uma
+lista comum. Usamos a tag "nav" para indicar a area do menu e, dentro
+dela, criamos uma lista "ul" onde cada item fica dentro de uma tag "li"
+com um link "a" apontando para as seções.
+O css: para que essa lista deixe de ter o visual padrão(vertical
+com pontos) e vire um menu horizontal, o CSS entra em ação: A propiedade
+LIST-STYLE-TYPE: NONE; e usada para remover as bolinhas originais da
+lista. A propiedade DISPLAY: INLINE; é aplicada aos itens da lista "li"
+para colocalos um ao lado do outro, formanda a barra horizontal. A
+propiedade TEXT-DECORORATION: NONE; é usada nos links "a" para remover o
+sublinhado padrão azul que vem do HTML. O uso do pseudo-classe :HOVER no
+CSS permite criar
+interitividade, como adicionar um sublinhado ou mudar a cor
+apenas quando o mouse passa por cima do link.
+</p>
+
+</body>
+</html>
