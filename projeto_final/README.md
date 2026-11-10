@@ -27,7 +27,7 @@ O site apresenta pontos turísticos da capital (arquitetura, natureza e lazer) d
 ## Estrutura de pastas
 
 ```
-turismo-brasilia/
+projeto_final/
 ├── index.html        # Página inicial (carrossel, cartões e destaques)
 ├── atrativos.html    # Pesquisa e filtro por categoria
 ├── contato.html      # Formulário de contato
