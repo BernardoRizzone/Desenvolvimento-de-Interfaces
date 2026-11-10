@@ -1,0 +1,67 @@
+/* Cores do site (paleta da Parte A) */
+:root{
+  --fundo:#FDFBF7;       /* Areia Suave */
+  --superficie:#FFFFFF;
+  --texto:#3F2204;       /* Marrom Café */
+  --terra:#9A3412;       /* Terra Cota / Siena */
+  --on-terra:#FFFFFF;
+  --oliva:#166534;       /* Verde Oliva */
+  --on-oliva:#FFFFFF;
+  --borda:#6B4A2B;
+}
+/* Modo escuro: mesmas cores, mais claras, pra ter contraste no fundo escuro */
+[data-bs-theme="dark"]{
+  --fundo:#1C1917;
+  --superficie:#292524;
+  --texto:#FDFBF7;
+  --terra:#FB923C;
+  --on-terra:#1C1917;
+  --oliva:#4ADE80;
+  --on-oliva:#1C1917;
+  --borda:#D6CFC7;
+}
+
+/* Sobrescrevendo o Bootstrap com as nossas cores */
+body{--bs-body-bg:var(--fundo);--bs-body-color:var(--texto)}
+a:not(.btn):not(.nav-link):not(.navbar-brand){color:var(--terra)}
+:focus-visible{outline:3px solid var(--terra);outline-offset:2px}
+
+.navbar{--bs-navbar-color:var(--texto);--bs-navbar-hover-color:var(--terra);--bs-navbar-active-color:var(--terra);--bs-navbar-brand-color:var(--texto);--bs-navbar-brand-hover-color:var(--terra);--bs-navbar-toggler-border-color:var(--borda)}
+#menu{background:var(--superficie);border-color:var(--terra)!important}
+[data-bs-theme="dark"] .navbar-toggler-icon{filter:invert(1)}
+.navbar-brand{font-weight:700}
+.nav-link.active{font-weight:700;text-decoration:underline;text-underline-offset:6px}
+
+/* Botões */
+.btn-terra,.btn-oliva{border-width:2px;font-weight:600}
+.btn-terra{--bs-btn-bg:var(--terra);--bs-btn-border-color:var(--terra);--bs-btn-color:var(--on-terra);--bs-btn-hover-bg:var(--terra);--bs-btn-hover-border-color:var(--terra);--bs-btn-hover-color:var(--on-terra);--bs-btn-active-bg:var(--terra);--bs-btn-active-color:var(--on-terra);--bs-btn-active-border-color:var(--terra)}
+.btn-oliva{--bs-btn-bg:var(--oliva);--bs-btn-border-color:var(--oliva);--bs-btn-color:var(--on-oliva);--bs-btn-hover-bg:var(--oliva);--bs-btn-hover-border-color:var(--oliva);--bs-btn-hover-color:var(--on-oliva);--bs-btn-active-bg:var(--oliva);--bs-btn-active-color:var(--on-oliva);--bs-btn-active-border-color:var(--oliva)}
+.btn-terra:hover,.btn-oliva:hover{filter:brightness(1.12)}
+.btn-acess{--bs-btn-color:var(--texto);--bs-btn-border-color:var(--borda);--bs-btn-hover-color:var(--texto);--bs-btn-hover-bg:var(--fundo);--bs-btn-hover-border-color:var(--terra);--bs-btn-active-color:var(--texto);--bs-btn-active-bg:var(--fundo)}
+
+/* Cartões */
+.card{--bs-card-bg:var(--superficie)}
+.faixa{background:var(--superficie)}
+.fato{border-left:6px solid var(--oliva)}
+.thumb{height:150px;display:flex;align-items:flex-end;padding:.75rem;color:#fff;font-weight:700}
+.thumb-arq{background:linear-gradient(135deg,#9A3412,#451A03)}
+.thumb-nat{background:linear-gradient(135deg,#166534,#052E16)}
+.thumb-cul{background:linear-gradient(135deg,#B45309,#3F2204)}
+
+/* Carrossel (troque os gradientes por fotos depois) */
+.slide{min-height:420px;padding-top:3rem;padding-bottom:5rem;color:#fff}
+.slide1{background:linear-gradient(180deg,rgba(63,34,4,.2),rgba(63,34,4,.9)),linear-gradient(160deg,#F59E0B,#9A3412)}
+.slide2{background:linear-gradient(180deg,rgba(0,0,0,.1),rgba(20,50,30,.92)),linear-gradient(160deg,#84CC16,#166534)}
+.slide3{background:linear-gradient(180deg,rgba(0,0,0,.1),rgba(40,20,5,.92)),linear-gradient(160deg,#FDBA74,#7C2D12)}
+.btn-pausa{position:absolute;right:1rem;bottom:1rem;z-index:5;background:rgba(0,0,0,.65);color:#fff;border:2px solid #fff}
+
+/* Formulários: borda mais escura pra passar no contraste (WCAG 1.4.11) */
+.form-control,.form-select{border-color:var(--borda)}
+.invalid-feedback{color:var(--terra);font-weight:600}
+
+/* Abas de filtro */
+.nav-pills{--bs-nav-pills-link-active-bg:var(--terra);--bs-nav-pills-link-active-color:var(--on-terra);--bs-nav-link-color:var(--texto)}
+.nav-pills .nav-link{border:2px solid var(--borda)}
+.nav-pills .nav-link.active{border-color:var(--terra)}
+
+#rodape{background:var(--superficie);border-color:var(--oliva)!important}
