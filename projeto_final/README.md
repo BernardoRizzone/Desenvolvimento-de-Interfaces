@@ -2,7 +2,7 @@
 
 Site institucional interativo sobre o turismo em Brasília, feito como projeto final da disciplina de **Desenvolvimento de Interfaces** (2/2026), do professor Dr. Felipe Batista da Silva.
 
-O site apresenta pontos turísticos da capital (arquitetura, natureza e lazer) de forma simples e acessível, com busca, filtros por categoria, formulário de contato e modo claro/escuro.
+O site  nasceu com o objetivo de facilitar a experiência de quem visita ou mora em Brasília. Diferente de guias tradicionais, a plataforma destaca tanto os pontos turísticos clássicos do Eixo Monumental (concebidos por Oscar Niemeyer e Lúcio Costa) quanto a rica cena cultural das Regiões Administrativas (RAs) e a gastronomia local do Distrito Federal. Apresenta pontos turísticos da capital (arquitetura, natureza e lazer) de forma simples e acessível, com busca, filtros por categoria, formulário de contato e modo claro/escuro.
 
 - **Aluno:** Bernardo Rizzone Sousa Vale de Araujo
 - **RA:** 22651897
@@ -157,7 +157,6 @@ O projeto foi versionado com Git, com commits pequenos a cada etapa (estrutura, 
 - WebAIM Contrast Checker: https://webaim.org/resources/contrastchecker/
 - MDN Web Docs: https://developer.mozilla.org/pt-BR/
 - Nielsen Norman Group. 10 Usability Heuristics: https://www.nngroup.com/articles/ten-usability-heuristics/
-- ADICIONE AQUI as demais referências que você usar.
 
 **Uso de IA:** a IA foi usada para auxiliar na estrutura do código, na análise de contraste e na revisão. A redação da Parte C do relatório foi escrita sem uso de IA. (Claude e Gemini.)
 
