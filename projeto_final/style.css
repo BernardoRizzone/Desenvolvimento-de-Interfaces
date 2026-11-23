@@ -44,15 +44,17 @@ a:not(.btn):not(.nav-link):not(.navbar-brand){color:var(--terra)}
 .faixa{background:var(--superficie)}
 .fato{border-left:6px solid var(--oliva)}
 .thumb{height:150px;display:flex;align-items:flex-end;padding:.75rem;color:#fff;font-weight:700}
+.thumb-img{display:block;width:100%;height:150px;object-fit:cover;border-radius:var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius) 0 0}
 .thumb-arq{background:linear-gradient(135deg,#9A3412,#451A03)}
 .thumb-nat{background:linear-gradient(135deg,#166534,#052E16)}
 .thumb-cul{background:linear-gradient(135deg,#B45309,#3F2204)}
 
-/* Carrossel (troque os gradientes por fotos depois) */
+/* Carrossel: imagem de fundo com degradê escuro por cima para garantir contraste do texto branco */
 .slide{min-height:420px;padding-top:3rem;padding-bottom:5rem;color:#fff}
-.slide1{background:linear-gradient(180deg,rgba(63,34,4,.2),rgba(63,34,4,.9)),linear-gradient(160deg,#F59E0B,#9A3412)}
-.slide2{background:linear-gradient(180deg,rgba(0,0,0,.1),rgba(20,50,30,.92)),linear-gradient(160deg,#84CC16,#166534)}
-.slide3{background:linear-gradient(180deg,rgba(0,0,0,.1),rgba(40,20,5,.92)),linear-gradient(160deg,#FDBA74,#7C2D12)}
+.slide{background-size:cover;background-position:center}
+.slide1{background-image:linear-gradient(180deg,rgba(63,34,4,.2),rgba(63,34,4,.9)),url(img/hero-eixo.svg)}
+.slide2{background-image:linear-gradient(180deg,rgba(0,0,0,.1),rgba(20,50,30,.92)),url(img/hero-cerrado.svg)}
+.slide3{background-image:linear-gradient(180deg,rgba(0,0,0,.1),rgba(40,20,5,.92)),url(img/hero-por-do-sol.svg)}
 .btn-pausa{position:absolute;right:1rem;bottom:1rem;z-index:5;background:rgba(0,0,0,.65);color:#fff;border:2px solid #fff}
 
 /* Formulários: borda mais escura pra passar no contraste (WCAG 1.4.11) */
@@ -65,3 +67,8 @@ a:not(.btn):not(.nav-link):not(.navbar-brand){color:var(--terra)}
 .nav-pills .nav-link.active{border-color:var(--terra)}
 
 #rodape{background:var(--superficie);border-color:var(--oliva)!important}
+
+/* Cartões clicáveis (link estendido) */
+.card:has(.stretched-link):hover{border-color:var(--terra);box-shadow:0 .25rem .75rem rgba(0,0,0,.15)}
+.card:has(.stretched-link:focus-visible){outline:3px solid var(--terra);outline-offset:2px}
+.card-body .stretched-link{display:inline-block;margin-top:.25rem}

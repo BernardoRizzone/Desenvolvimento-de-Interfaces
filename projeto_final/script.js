@@ -59,7 +59,8 @@ if (busca) {
     let total = 0;
 
     cards.forEach(function (card) {
-      const textoOk = card.textContent.toLowerCase().includes(termo);
+      const conteudo = card.querySelector(".card-body").firstElementChild.textContent + " " + card.querySelector(".card-text").textContent;
+      const textoOk = conteudo.toLowerCase().includes(termo);
       const catOk = categoria === "todos" || card.dataset.cat === categoria;
       if (textoOk && catOk) {
         card.classList.remove("d-none");
@@ -105,3 +106,23 @@ document.querySelectorAll(".needs-validation").forEach(function (form) {
     form.querySelector(".sucesso").classList.remove("d-none");
   });
 });
+
+// ---------- Contato: preenche o formulário quando vem de um atrativo ----------
+const params = new URLSearchParams(window.location.search);
+const atrativo = params.get("atrativo");
+const campoMensagem = document.getElementById("mensagem");
+if (atrativo && campoMensagem) {
+  campoMensagem.value = "Olá! Tenho interesse em visitar: " + atrativo + ". Gostaria de ajuda para planejar a visita.";
+  const interesse = document.getElementById("interesse");
+  const nome = atrativo.toLowerCase();
+  const arq = ["catedral", "congresso", "alvorada", "ponte"];
+  const nat = ["parque", "lago"];
+  if (arq.some(function (p) { return nome.includes(p); })) interesse.value = "Roteiro de arquitetura";
+  else if (nat.some(function (p) { return nome.includes(p); })) interesse.value = "Natureza e trilhas";
+  else interesse.value = "Outro";
+  const aviso = document.getElementById("avisoAtrativo");
+  if (aviso) {
+    aviso.textContent = "Você escolheu: " + atrativo + ". Complete seus dados e envie.";
+    aviso.classList.remove("d-none");
+  }
+}

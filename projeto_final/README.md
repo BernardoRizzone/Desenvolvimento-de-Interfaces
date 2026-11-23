@@ -34,7 +34,7 @@ projeto_final/
 ├── login.html        # Página de login (simulada)
 ├── style.css         # Cores, modo escuro e ajustes do Bootstrap
 ├── script.js         # Comportamentos do site
-├── img/              # Fotos usadas no site
+├── img/              # Ilustrações em SVG (8 atrativos + 3 do carrossel)
 └── README.md
 ```
 
@@ -117,38 +117,14 @@ Ferramentas usadas para conferir: WebAIM Contrast Checker e o inspetor do Chrome
 6. **Pesquisa e abas:** o JavaScript percorre os cartões e esconde os que não combinam com o texto digitado ou com a categoria escolhida.
 7. **Formulários:** usei a validação do Bootstrap (`needs-validation`) com `checkValidity()`, mostrando mensagens de erro claras.
 8. **Acessibilidade:** adicionei os botões de tema e tamanho da fonte, que salvam a escolha no `localStorage`.
-9. **Imagens:** adicionei as fotos com `object-fit: cover` e `aspect-ratio`, para manter a proporção sem deformar.
-10. **Testes:** testei no computador e no celular, com teclado e nos dois modos de cor, e conferi o contraste com ferramentas.
-11. **Publicação:** versionei com commits pequenos no GitHub e publiquei no GitHub Pages.
+9. **Imagens:** ilustrações originais em SVG, criadas com auxílio de IA (Claude) especificamente para este projeto, sem fotos de terceiros e sem restrição de licença. Podem ser trocadas por fotos reais (citando autor e licença nesta tabela).
 
----
-
-## Como executar
-
-1. Clone o repositório:
-   ```bash
-   git clone LINK_DO_REPOSITORIO
-   ```
-2. Abra a pasta no VS Code.
-3. Use a extensão **Live Server** no `index.html` (ou abra o arquivo direto no navegador).
-4. É preciso ter internet, porque o Bootstrap é carregado por CDN.
-
----
-
-## Controle de versão
-
-O projeto foi versionado com Git, com commits pequenos a cada etapa (estrutura, paleta, carrossel, filtros, formulários, acessibilidade e imagens). O histórico está na aba **Commits** do repositório.
-
----
-
-## Créditos e referências
-
-**Imagens:** liste aqui cada foto, o autor e a licença.
-
-| Imagem | Autor | Fonte / Licença |
-|---|---|---|
-| catedral.jpg | | |
-| parque-nacional.jpg | | |
+| Arquivo | Uso |
+|---|---|
+| catedral.svg, congresso.svg, alvorada.svg, ponte-jk.svg | Cartões de arquitetura |
+| parque-nacional.svg, lago-paranoa.svg | Cartões de natureza |
+| dom-bosco.svg, feira-torre-tv.svg | Cartões de cultura e lazer |
+| hero-eixo.svg, hero-cerrado.svg, hero-por-do-sol.svg | Slides do carrossel |
 
 **Referências:**
 
