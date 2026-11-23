@@ -6,8 +6,8 @@ O site  nasceu com o objetivo de facilitar a experiência de quem visita ou mora
 
 - **Aluno:** Bernardo Rizzone Sousa Vale de Araujo
 - **RA:** 22651897
-- **Site publicado:** 
-- **Repositório:** 
+- **Site publicado:** https://bernardorizzone.github.io/Desenvolvimento-de-Interfaces/projeto_final/index.html
+- **Repositório:** https://github.com/BernardoRizzone/Desenvolvimento-de-Interfaces/projeto_final
 
 ---
 
